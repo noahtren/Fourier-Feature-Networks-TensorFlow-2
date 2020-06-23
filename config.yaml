@@ -1,0 +1,13 @@
+# authors use 256 frequencies for feature mappings in all their experiments
+m: 256
+
+# sigma = 10 for a Gaussian distribution appears to be optimal for their dataset
+# of natural images. It also produces good results with places365 data.
+sigma: 10
+# number of layers to use in MLP
+layers: 4
+# number of units to use in MLP
+units: 256
+
+# you can set this to false to see how performance changes when not using Fourier features
+use_fourier_features: true
